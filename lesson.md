@@ -1,7 +1,7 @@
 # Lesson — L04 Advanced Supervised Learning: Trees & Ensembles
 
 > **Chapter 4 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 5.*
-> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
+> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 10 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
 
 This document is a **short reference** — the lesson itself is taught in the notebooks. Read it for orientation before class, then come back for the takeaways, the model-shipping checklist, and the course map.
 
