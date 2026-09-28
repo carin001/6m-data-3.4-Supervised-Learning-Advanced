@@ -1,7 +1,7 @@
 # Lesson — L04 Advanced Supervised Learning: Trees & Ensembles
 
 > **Chapter 4 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 5.*
-> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 11 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
+> Marcus's brief from yesterday: *"Can you make this model BETTER tomorrow? Try those tree-based models you mentioned."* Same dataset as L03 — `northstar_churn.csv`, 10,000 customers, 10 features, target = `churned`. By the end of the day Sarah has to show whether trees and ensembles beat the L03 logistic-regression baseline.
 
 This document is a **short reference** — the lesson itself is taught in the notebooks. Read it for orientation before class, then come back for the takeaways, the model-shipping checklist, and the course map.
 
@@ -69,7 +69,7 @@ A quick self-check before the course map. Read each concept; if any feels fuzzy,
 *Real-world use:* Banks' credit-risk models and Kaggle-winning retail demand forecasts are usually gradient-boosted trees.
 
 **Hyperparameter tuning** — Systematically trying different model settings (tree depth, learning rate, number of trees) inside cross-validation, so the winner earned its score on unseen folds rather than luck.
-*Real-world use:* A streaming service grid-searching its recommender's settings before rollout — same discipline Sarah uses on the churn booster.
+*Real-world use:* A streaming service grid-searching its recommender's settings before rollout — same discipline Sarah uses on her churn models.
 
 **Feature importance** — A ranking of which inputs the ensemble leaned on most. It tells you *what* drove predictions overall — useful for explanation and for spotting suspicious shortcuts.
 *Real-world use:* An insurer discovering "months since last claim" dominates its pricing model — a story executives and regulators can follow.
@@ -94,6 +94,6 @@ L04's discipline — ensemble methods, hyperparameter tuning inside a cross-vali
 
 ---
 
-> *"Nice. Now — what about all those customers who DON'T churn but also don't log in for a year? Can we find natural clusters of customer behaviour? Without labels?"* — Marcus, after Sarah ships the tuned booster.
+> *"Nice. Now — what about all those customers who DON'T churn but also don't log in for a year? Can we find natural clusters of customer behaviour? Without labels?"* — Marcus, after Sarah ships the tuned Random Forest.
 >
 > That question — *can we find structure when there's no target column?* — is the engine of **L05 (Unsupervised Learning)**.
